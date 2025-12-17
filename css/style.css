@@ -1,0 +1,102 @@
+* {
+   margin: 0;
+   padding: 0;
+   border:0; 
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: orange;
+}
+
+.imatgeperposar{
+    height: 0px;
+    display: none;
+}
+
+ul{
+    display: block;
+    vertical-align: bottom;
+    width: 100%;
+    background-color: orange;
+    padding: 10px;
+    height: 10%;
+}
+
+li{
+    margin: 5px 10px;
+    display: inline-block;
+}
+li:hover{
+    color: orange;
+}
+
+a{
+    line-height: 30px;
+    text-decoration: none;
+    padding: 10px 15px;
+    height: 30px;
+    display: inline-block;
+    background-color: orange;
+}
+
+a:link
+{
+    color: white;
+}
+
+a:hover
+{
+    background-color:#666;
+}
+
+a:active
+{
+    background-color: #666;
+}
+a:visited
+{
+    color: white;
+}
+
+.cos{
+    background-color: pink;
+    margin: auto;
+    text-align: center;
+}
+
+.quisoc{
+    background-color: white;
+    padding: 20px;
+    height: 35%;
+}
+
+.logo-fletxa{
+    transform: rotate(90deg);
+    height: 50px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 30px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+p{
+    font-weight: lighter;
+}
+
+.portafoli{
+    height: 35%;
+    width: 100%;
+}
+
+.contacte{
+    height: 20%;
+    width: 100%;
+}

@@ -1,0 +1,109 @@
+body{
+    background: white;
+}
+
+.fulla{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 100% 0 100% 0;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    transform-origin: bottom left;
+    background-image: linear-gradient(45deg, orange, blue  ) ;
+}
+
+.flor{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.f1{
+    transform: rotate(0deg);
+}
+
+.f2{
+    transform: rotate(60deg);
+    background-color: turquoise;
+}
+
+.f3{
+    transform: rotate(120deg);
+    background-color: purple;
+}
+
+.f4{
+    transform: rotate(180deg);
+}
+
+.f5{
+    transform: rotate(240deg);
+    background-color: turquoise;
+}
+
+.f6{
+    transform: rotate(300deg);
+    background-color: purple;
+}
+
+.cor{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 141);
+    border-radius: 50%;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    background-image: radial-gradient(orange,rgb(255, 255, 141) );
+}
+
+@keyframes rotacio{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.pal{
+    height: 300px;
+    width: 20px;
+    background-color:rgb(65, 119, 65);
+    position: absolute;
+    left:150px;
+    top:150px;
+}
+
+.r1{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(65, 119, 65);
+    border-radius: 100% 0 100% 0;
+    position: absolute;
+    top: 285px;
+    left: 165px;
+    transform-origin: bottom left;
+}
+
+.r2{
+    width: 65px;
+    height: 65px;
+    background-color:rgb(65, 119, 65);
+    border-radius: 0% 100% 0% 100%;
+    position: absolute;
+    top: 320px;
+    left: 90px;
+    transform-origin: bottom left;
+}
+
+.conjunt:hover .flor{
+    animation: 5s rotacio linear infinite;
+}
+
+.conjunt{
+    width: 300px;
+    height: 700px;
+}

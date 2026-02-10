@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedly</title>
-    <meta author="Vane">
+    <meta author="Jana">
     <style>
         body{
             margin: 0;
@@ -43,8 +43,7 @@
             height: 45px;
             background-color: #FFF;
             overflow: hidden;
-            
-                }
+        }
         .menu img{
             padding: 5px;
             padding-top: 10px;
@@ -124,6 +123,38 @@
         .control b {
             position:relative;
             top: 3px;
+        }
+
+        @media  screen and (max-width: 640px){
+            .coneix, .tot, .util, .rapid, .facil, .arreu, .canvia{
+                background-position: 0 300px;
+                background-size: 100vw;
+            }
+            .coneix, .facil{
+                background-color: red;
+            }
+            li{
+                background: red;
+                display: block;
+                border-radius: 0;
+                margin: 1px 0;
+                text-align: center;
+                align-content: center;
+            }
+            li:hover{
+                background: rgb(254, 83, 57);
+            }
+            li a{
+                color: white;
+            }
+            .menu {
+                height: 100%;
+            }
+            .menu img{
+                display: block;
+                margin: auto;
+                margin-bottom: -15px;
+            }
         }
     </style>
 </head>

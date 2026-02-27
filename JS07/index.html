@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS07</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: ;
+        }
+
+        #sol{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: rgb(255, 229, 29);
+            display: inline-block;
+            margin: 1rem;
+            float: left;
+        }
+
+        #lluna{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            box-shadow: 0.5rem 0rem 0 silver;
+            display: inline-block;
+            margin: 1rem;
+            float: left;
+        }
+
+        ul{
+            display: inline-block;
+            margin: 0;
+            float: right;
+        }
+
+        li{
+            display: inline-block;
+            margin: 1rem;
+            font-size: 2rem;
+        }
+
+        #txt{
+            width: 30rem;
+            margin: 3rem auto 1rem auto;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="sol"></div>
+    <div id="lluna"></div>
+
+    <ul>
+        <li id="a">A</li>
+        <li id="aa">AA</li>
+        <li id="aaa">AAA</li>
+    </ul>
+
+    <p id="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates veritatis assumenda fugit consectetur qui obcaecati dicta, rem quas corrupti in ipsam cum, eum consequatur sequi deleniti quod repudiandae eius odio?
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur error, officia est distinctio sint itaque recusandae deleniti pariatur optio esse facere dolorem dolores quidem rerum fuga, cum non alias. Ducimus!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti provident ea vitae necessitatibus inventore illo harum fugit error reprehenderit veniam illum, velit id cupiditate? Qui labore quo possimus cumque.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, nostrum voluptas blanditiis, accusamus enim rem nam cupiditate at ullam eligendi deserunt quam explicabo iure ipsa officia, veritatis eos corrupti. Illum?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis fugit ducimus iure, explicabo modi saepe quisquam, autem necessitatibus impedit placeat animi accusantium soluta dignissimos dolorem. Perferendis ullam nostrum commodi amet.
+    </p>
+
+</body>
+
+<script type="text/javascript" language="javascript">
+
+        //definim els events
+            document.getElementById("sol").addEventListener("click",dia);
+            document.getElementById("lluna").addEventListener("click",nit);
+
+        //creem les funcions
+
+            function dia(){
+                document.body.style.backgroundColor="white";
+                document.getElementById("txt").style.color="black";
+                document.getElementById("a").style.color="black";
+                document.getElementById("aa").style.color="black";
+                document.getElementById("aaa").style.color="black";
+            }
+            function nit(){
+                document.body.style.backgroundColor="black";
+                document.getElementById("txt").style.color="white";
+                document.getElementById("a").style.color="white";
+                document.getElementById("aa").style.color="white";
+                document.getElementById("aaa").style.color="white";
+            }
+
+
+            ///////////////////////////////////////
+
+            //definir els events
+                document.getElementById("a").addEventListener("click", reduir);
+                document.getElementById("aa").addEventListener("click", normal);
+                document.getElementById("aaa").addEventListener("click", augmentar);
+
+            //creem les funcions
+                function reduir(){
+                    document.getElementById("txt").style.fontSize="0.5rem"
+                }
+                function normal(){
+                    document.getElementById("txt").style.fontSize="1rem"
+                }
+                function augmentar(){
+                    document.getElementById("txt").style.fontSize="2rem"
+                }
+    </script>
+</html>
